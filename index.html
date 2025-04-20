@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel ginie-A special tour to india</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/icon.jpg">
+    <style>
+/* Base styles here are applied to all devices by default */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    h1{
+        margin-left: 500px;
+        
+
+    }
+    .button2{
+        margin-left:-200pxpx;
+    }
+    .footer-row, .slidebox, .slidebox1 {
+        flex-direction: column;
+    }
+    .footer-column, .box1, .box2, .box3, .box4, .box5, .box6 {
+        width: 100%;
+        text-align: center;
+    }
+    .searchbox {
+       
+        text-align: center;
+        margin-left: 50px;
+    }
+    #searchbar {
+        width: 90%;
+        margin-left: 500px;
+    }
+    .imageslider, .imageslider1, .imageslider2, .imageslider3, .imageslider4, .imageslider5, .imageslider6, .imagesliderbox1, .imagesliderbox2, .imagesliderbox3 {
+        width: 90%;
+        margin: 0 auto;
+    }
+     .slide1, .line {
+        margin-left: 20px;
+    }
+    .paragraph{
+        white-space: nowrap;
+    }
+    .boxforlater{
+        width:100px;
+    }
+
+   
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Adjustments for tablets go here */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Adjustments for desktops go here */
+}
+
+
+
+
+
+
+.footer {
+    height:200px ;
+    width: 1400px;
+    border-radius: 10px;
+    background-color: #010101;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 25%;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-column ul,
+.footer-column p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+    *{ 
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    html{
+        font-size:6.25%;
+    }
+    header{
+        border: solid gray 2px;
+        display: flex;
+        margin: 0%;
+        
+        
+        
+    }
+    .logo{
+        margin-left: 10px;
+        margin-top:5px
+    }
+    li.lastline{
+        height: 25px;
+        width:105px;
+        white-space: nowrap;
+        margin-top:15px;
+       margin-left: 30px;
+        font-size: 20px;
+        list-style: none;
+        border: #010101 solid 1px;
+        border-radius: 5px;
+        background-color: #ff6512dc;    }
+    li.lastline2{
+        white-space: nowrap;
+        margin-top:18px;
+       margin-left: 45px;
+        font-size: large;
+        list-style: none;
+        
+    }
+    ul{ 
+        height: 50px;      
+        list-style: none;
+        display: flex;
+        
+    }
+    ul li{
+        margin-top: 10px;
+        white-space: nowrap;
+        position: relative;
+    }
+    ul li a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        color:black;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    }
+    ul li ul.dropdown li {
+        display: flex;
+    }
+    ul li ul.dropdown {
+        height: fit-content;
+        background:whitesmoke;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+    ul li a:hover {
+        background: #ff6612;
+    }
+    ul li:hover ul.dropdown{
+        color:wheat;
+        display: block;
+        margin-top: -10px;
+    }
+    .button1{ background-color:#ff6612;
+        height: 28px;
+        width:87px;
+        margin-top:15px;
+        margin-left: 25px;
+        border:solid black 2px;
+        border-radius:5px; }
+        .button2{ background-color:#ff6612;
+        height: 29px;
+        width:87px;
+        margin-top:15px;
+        margin-left: 300px;
+        border:solid black 2px;
+        border-radius:5px; }
+    
+    .virtual{
+       
+        
+        text-decoration: none;
+    }
+    
+    a{
+        text-decoration:none;
+    }
+    #searchbar{
+        margin: 40px;
+        width: 350px;
+        height: 50px;
+        border: solid black 2px;
+        border-radius:25px;
+        padding-left: 45px;
+        font-size: 20rem;
+        
+        
+    }
+    .searchbox{
+        margin-left:40%; 
+        align-items: center;
+    }
+    #search{
+        height: 32px;
+        padding-top:14px;
+        padding-bottom: -20px;
+        font-size: 20rem;
+        border-radius: 3px;
+        margin-left:-380px;
+        
+    }
+    
+    #angeldown{
+        margin-left:2px;
+        font-size:10px;
+        margin-top:5px;
+        
+        
+    }
+    .imageslider{
+        margin-top: -110px;
+        margin-left: 30px;
+        height: 550px;
+        width: 400px;
+        background-image: url("image2/ram-mandir-1.png");
+        background-size: 100% 100%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        animation-name: changeImage;
+        animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes changeImage {
+        5%{
+            background-image: url("image2/ram-mandir-1.png")  ;
+        }
+        25%{
+            background-image: url("image2/hampta\ terk\ 1.jpg")  ;
+        } 
+        50%{
+            background-image: url("image2/prem\ mandir-1.png")  ;
+        } 
+        75%{
+            background-image: url("image2/jammu-kashmir-1.png")  ;
+        } 
+        100%{
+            background-image: url("image2/taj-mahal-1.png")  ;
+        } 
+    }
+    .container{ 
+        
+        font-family:  'Raleway', sans-serif;;
+        margin-top: -450px;
+    
+        margin-left: 180px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    h1{ 
+        text-decoration: none;
+        font-family:'Raleway', sans-serif;
+         color:#ff6612;
+        font-size: 80rem;
+    }
+    .auto-type{ 
+    
+        margin-left: 10px;
+        font-size:70rem;
+       color :#ff6612;}
+    p{  font-weight: lighter;
+        font-family:  'Raleway', sans-serif;
+        color:black;
+        
+    }
+    b{  font-weight: lighter;
+        font-family:  'Raleway', sans-serif;
+        font-size: 75rem;
+        color:black;
+    }
+    .paragraph{
+    
+        margin-top: 20px;
+        font-family:'Raleway', sans-serif;
+        margin-left:600px;
+        font-size: 25rem;
+        color: gray;
+    }
+    
+    .boxforlater{
+        object-fit: cover;
+        height: 150px;
+       margin-top: 40px;
+        width: 0px;
+      background-color: black;
+        margin-left: 550px;
+    
+    }
+    .slide1{
+        margin-left: 180px;
+        margin-top: 100px;
+        height: 0px;
+        width: 1200px;
+        font-family:'popins',sans-serif ;
+        font-size: 80px;
+        border-radius: 5px;
+        
+    }
+    .Fullbox{
+        box-shadow: -1px 1px 10px rgba(0,0,0,.5);
+        height:1250px;
+        width: 1410px;
+        
+        margin-left:50px;
+        border-radius: 15px;
+        
+        
+    }
+    .slidebox{
+        display: flex;
+        
+    
+    }
+    .slidebox1{
+        display: flex;
+        
+      
+    
+    }
+    .box1{
+        
+        margin:100px 30px 40px 40px;
+        height:450px;
+        width:400px; 
+    }
+    .box2{
+        
+        margin:100px 30px 40px 40px;
+        height:450px;
+        width:400px;
+        background-color: aqua;
+        
+    }
+    .box3{
+        
+        margin:100px 30px 40px 40px;
+        height:450px;
+        width:400px;
+        background-color: aqua;
+        
+    }
+    .box4{
+        
+        margin:100px 30px 40px 40px;
+        height:450px;
+        width:400px;
+        background-color: aqua;
+        
+    }
+    .box5{
+        
+        margin:100px 30px 40px 40px;
+        height:450px;
+        width:400px;
+        background-color: aqua;
+        
+    }
+    .box6{
+        
+        margin:100px 0px 40px 40px;
+        height:450px;
+        width:400px;
+        background-color: aqua;
+        
+    }
+    .imageslider1{
+        margin-top: 0px;
+        margin-left:0px;
+        height: 500px;
+        width: 400px;
+        background-image: url("images/image1.jpg");
+        background-size: 100% 100%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        animation-name: changeImage1;
+        animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes changeImage1 {
+        5%{
+            background-image: url("images/image1.jpg")  ;
+        }
+        25%{
+            background-image: url("images/image\ 5\ \(1\).jpg")  ;
+        } 
+        50%{
+            background-image: url("images/image\ 5\ \(2\).jpg")  ;
+        } 
+        75%{
+            background-image: url("images/image\ 3.jpg");
+        } 
+        100%{
+            background-image: url("images/image\ 5.jpg");
+        } }
+    
+    .imageslider2{
+            margin-top: 0px;
+            margin-left:0px;
+            height: 500px;
+            width: 400px;
+            background-image: url("Up-images/gn.jpg");
+            background-size: 100% 100%;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            animation-name: changeImage2;
+            animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+        @keyframes changeImage2 {
+            5%{
+                background-image: url("Up-images/gn.jpg")  ;
+            }
+            25%{
+                background-image: url("Up-images/varanasi.jpg")  ;
+            } 
+            50%{
+                background-image: url("Up-images/prem\ mandir.jpg")  ;
+            } 
+            75%{
+                background-image: url("Up-images/ram-mandir.jpeg");
+            } 
+            100%{
+                background-image: url("Up-images/taj\ mahal.jpeg");
+            } }
+    .imageslider4{
+                margin-top: 0px;
+                margin-left:0px;
+                height: 500px;
+                width: 400px;
+                background-image: url("Kerala/BACKWATER.jpg");
+                background-size: 100% 100%;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                animation-name: changeImage4;
+                animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+                animation-iteration-count: infinite;
+                animation-duration: 10s;
+            }
+    @keyframes changeImage4 {
+                5%{
+                    background-image: url("Kerala/BACKWATER.jpg")  ;
+                }
+                25%{
+                    background-image: url("Kerala/BOAT\ RACE.jpg")  ;
+                } 
+                50%{
+                    background-image: url("Kerala/im.4.jpeg")  ;
+                } 
+                75%{
+                    background-image: url("Kerala/Kerala-Backwaters.webp");
+                } 
+                100%{
+                    background-image: url("Kerala/MUNNAR.jpg");
+                } }
+    .imageslider5{
+                    margin-top: 0px;
+                    margin-left:0px;
+                    height: 500px;
+                    width: 400px;
+                    background-image: url("mumbai/elephanta.png");
+                    background-size: 100% 100%;
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                    animation-name: changeImage5;
+                    animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+                    animation-iteration-count: infinite;
+                    animation-duration: 10s;
+                }
+                @keyframes changeImage5 {
+                    5%{
+                        background-image: url("mumbai/elephanta.png")  ;
+                    }
+                    25%{
+                        background-image: url("mumbai/Shree\ Siddhivinayak.png")  ;
+                    } 
+                    50%{
+                        background-image: url("mumbai/gate\ of\ india.jpg")  ;
+                    } 
+                    75%{
+                        background-image: url("mumbai/marine-drive-2300181_1280.jpg");
+                    } 
+                    100%{
+                        background-image: url("mumbai/Chhatrapati\ Shivaji\ Terminus.png");
+                    } }
+        
+    .imageslider6{
+                        margin-top: 0px;
+                        margin-left:0px;
+                        height: 500px;
+                        width: 400px;
+                        background-image: url("rajasthan/r1.jpg");
+                        background-size: 100% 100%;
+                        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                        animation-name: changeImage6;
+                        animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+                        animation-iteration-count: infinite;
+                        animation-duration: 10s;
+                    }
+     @keyframes changeImage6{
+                        5%{
+                            background-image: url("rajasthan/r1.jpg")  ;
+                        }
+                        25%{
+                            background-image: url("rajasthan/r2.webp")  ;
+                        } 
+                        50%{
+                            background-image: url("rajasthan/r3.jpg")  ;
+                        } 
+                        75%{
+                            background-image: url("rajasthan/r4.webp");
+                        } 
+                        100%{
+                            background-image: url("rajasthan/r5.jpg");
+                        } }
+    .imageslider3{
+                            margin-top: 0px;
+                            margin-left:0px;
+                            height: 500px;
+                            width: 400px;
+                            background-image: url("images/jk3.jpg");
+                            background-size: 100% 100%;
+                            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                            animation-name: changeImage3;
+                            animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+                            animation-iteration-count: infinite;
+                            animation-duration: 10s;
+                        }
+    @keyframes changeImage3 {
+                            5%{
+                                background-image: url("images/jk1.jpg")  ;
+                            }
+                            25%{
+                                background-image: url("images/jk5.jpg")  ;
+                            } 
+                            50%{
+                                background-image: url("images/jk3.jpg")  ;
+                            } 
+                            75%{
+                                background-image: url("images/jk4.jpg");
+                            } 
+                            100%{
+                                background-image: url("images/jk2.jpg");
+                            } }
+                    
+        
+        a{
+            color:antiquewhite;
+        }
+    .name1{
+        font-weight: 700;
+        font-family: 'popins'sans-serif;
+        margin-left:5px;
+        margin-top: -90px;
+        font-size:50px;
+        height: 100px;
+        width: 200px;
+        text-decoration:dotted;
+        background-color: transparent;
+    }
+    .name2{
+        white-space: nowrap;
+        font-weight: 700;
+        font-family: 'popins'sans-serif;
+        margin-left:5px;
+        margin-top: -90px;
+        font-size:50px;
+        height: 100px;
+        width: 200px;
+        text-decoration:dotted;
+        background-color: transparent;
+    }
+    .name3{
+        white-space: nowrap;
+        font-weight: 700;
+        font-family: 'popins'sans-serif;
+        margin-left:5px;
+        margin-top: -90px;
+        font-size:50px;
+        height: 100px;
+        width: 200px;
+        text-decoration:dotted;
+        background-color: transparent;
+    }
+    .Subname{
+        font-family: 'popins',sans-serif;
+        font-size: 20px;
+        margin-top: -40px;
+        color: antiquewhite;
+        margin-left: 5px;
+    }
+    .Subname2{
+        font-family: 'popins',sans-serif;
+        font-size: 20px;
+        margin-top: -40px;
+        color: antiquewhite;
+        margin-left: 5px;
+    }
+    .Subname3{
+        font-family: 'popins',sans-serif;
+        font-size: 20px;
+        margin-top: -40px;
+        color: antiquewhite;
+        margin-left: 5px;
+    }
+    .name4{
+        white-space: nowrap;
+        font-weight: 700;
+        font-family: 'popins'sans-serif;
+        margin-left:5px;
+        margin-top: -90px;
+        font-size:50px;
+        height: 100px;
+        width: 200px;
+        text-decoration:dotted;
+        background-color: transparent;
+    }
+    .Subname4{
+        font-family: 'popins',sans-serif;
+        font-size: 20px;
+        margin-top: -40px;
+        color: antiquewhite;
+        margin-left: 5px;
+    }
+    .name5{
+        white-space: nowrap;
+        font-weight: 700;
+        font-family: 'popins'sans-serif;
+        margin-left:5px;
+        margin-top: -90px;
+        font-size:50px;
+        height: 100px;
+        width: 200px;
+        text-decoration:dotted;
+        background-color: transparent;
+    }
+    .Subname5{
+        font-family: 'popins',sans-serif;
+        font-size: 20px;
+        margin-top: -40px;
+        color: antiquewhite;
+        margin-left: 5px;
+    }
+    .name6{
+        white-space: nowrap;
+        font-weight: 700;
+        font-family: 'popins'sans-serif;
+        margin-left:5px;
+        margin-top: -90px;
+        font-size:50px;
+        height: 100px;
+        width: 200px;
+        text-decoration:dotted;
+        background-color: transparent;
+    }
+    .Subname6{
+        font-family: 'popins',sans-serif;
+        font-size: 20px;
+        margin-top: -40px;
+        color: antiquewhite;
+        margin-left: 5px;
+    }
+    .slider{
+        margin-top:-250px;
+    
+        
+    }
+    .slide2{
+        margin-left:2px;
+    }
+    .slide3{
+        margin-top: -55px;
+        margin-left: 1470px;
+    }
+    .fulldown{
+        margin-top: 20px;
+        height: 650px;
+        width: 1410px;
+        
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+        border-radius: 15px;
+    }
+    .downline{ margin-top: 80px;
+        height: 500px;
+        width: 500px;
+        
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        margin-left:40px;
+        margin-right: 40px;
+        border-radius: 15px;
+    }
+    .line{ 
+            margin-left: 450px;
+            margin-top: 90px;
+            height:0px;
+            width: 100px;
+            white-space: nowrap;
+            font-family:'popins',sans-serif ;
+            font-size: 60px;
+            border-radius: 5px;}
+    
+    .Container{
+        width:80%;
+        margin:0px auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        
+    
+    }
+    .card{
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        cursor: pointer;
+        margin: 20px;
+        transition: 0.5s ease;
+        width: 500px;
+        margin-top: 50px;
+    }
+    .card:hover{
+        transform: translate(10px);
+    }
+    .card-content{
+        padding: 25px;
+    }
+    .card-content h2{
+        font-size: 35px;
+        color:#ff6612;
+        margin: 20px ;
+    }
+    .card-content p{
+        font-size: 15px;
+        color:#666;
+        margin: 15px;
+        line-height: 1.4;
+    }
+    .card-content a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #0f54a3;
+    }
+    
+    
+    .wh{
+        margin-left: 200px;
+        font-size: 70px;
+        font-weight: bolder;
+        margin-top: 10px;
+        margin-top: 50px;
+        font-family: roboto-black;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      
+    
+    }
+    .banner{
+        margin-top: 410px;
+        font-size: 40px;
+        margin-left: 10px;
+    }
+    .imagesliderbox1{
+        border-radius:5px;
+        margin-top: -5px;
+        height: 520px;
+        width: 400px;
+        background-image: url("Char-Dham/dwarka.jpg");
+        background-size: 100% 100%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        animation-name: changeImage7;
+        animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes changeImage7 {
+        5%{
+            background-image: url("Char-Dham/badrinath.jpg")  ;
+        }
+        25%{
+            background-image: url("Char-Dham/jagannath\ temple.jpg")  ;
+        } 
+        50%{
+            background-image: url("Char-Dham/Yamunotri.jpg")  ;
+        } 
+        75%{
+            background-image: url("Char-Dham/dwarka.jpg")  ;
+        } 
+        100%{
+            background-image: url("Char-Dham/Kedarnath\ 1.jpg")  ;
+        } 
+    }
+    .imagesliderbox2{
+        border-radius:5px;
+        margin-top: -5px;
+        height: 520px;
+        width: 400px;
+        background-image: url("sikkim/Lachung.jpg");
+        background-size: 100% 100%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        animation-name: changeImage8;
+        animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes changeImage8{
+        5%{
+            background-image: url("sikkim/Lachung.jpg")  ;
+        }
+        25%{
+            background-image: url("sikkim/image5-1\ -\ Copy.jpg")  ;
+        } 
+        50%{
+            background-image: url("sikkim/topmarch.jpg")  ;
+        } 
+        75%{
+            background-image: url("sikkim/topmay.jpg")  ;
+        } 
+        100%{
+            background-image: url("sikkim/Zuluk.jpg")  ;
+        } 
+    }
+    .imagesliderbox3{
+        border-radius:5px;
+        margin-top: -5px;
+        height: 520px;
+        width: 400px;
+        background-image: url("local-market/OIP\ -\ Copy.jpeg");
+        background-size: 100% 100%;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        animation-name: changeImage9;
+        animation-timing-function: cubic-bezier(0.75, 0.82, 0.165, 1);
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+    }
+    @keyframes changeImage9{
+        5%{
+            background-image: url("local-market/OIP\ -\ Copy.jpeg")  ;
+        }
+        25%{
+            background-image: url("local-market/1532400899114\ -\ Copy.avif")  ;
+        } 
+        50%{
+            background-image: url("local-market/Sarojini-Market-1068x601\ -\ Copy.jpg")  ;
+        } 
+        75%{
+            background-image: url("local-market/Sarojini-Market-1068x601\ -\ Copy.jpg")  ;
+        } 
+        100%{
+            background-image: url("local-market/Places-in-Delhi-To-Buy-Perfect-Diwali-Gifts-05-768x432\ -\ Copy.jpg")  ;
+        } 
+    }
+    .subname1{
+        white-space:nowrap;
+            font-weight: 700;
+            font-family: 'popins'sans-serif;
+            margin-left:5px;
+            margin-top: -70px;
+            font-size:50px;
+            height: 100px;
+            width: 200px;
+            text-decoration:dotted;
+            background-color: transparent;
+    }
+    .subname2{
+        white-space:nowrap;
+            font-weight: 700;
+            font-family: 'popins'sans-serif;
+            margin-left:5px;
+            margin-top: -70px;
+            font-size:50px;
+            height: 100px;
+            width: 200px;
+            text-decoration:dotted;
+            background-color: transparent;
+    }
+    .subname3{
+        white-space:nowrap;
+            font-weight: 700;
+            font-family: 'popins'sans-serif;
+            margin-left:5px;
+            margin-top: -70px;
+            font-size:50px;
+            height: 100px;
+            width: 200px;
+            text-decoration:dotted;
+            background-color: transparent;
+    }
+    
+    .foot{
+        height: 500px;
+        width: 1410px;
+        background-color: #0f54a3;
+    
+    }
+    .h{
+        margin-top: -10px;
+    }
+.s{
+    margin-top: 17px;
+    margin-left: -75px;
+}
+.p{
+    margin-top: 45px;
+    margin-left: -95px;
+}
+.c{
+    margin-top: 70px;
+    margin-left: -95px;
+}
+.no-{
+    margin-top: -20px;
+    margin-left: -10px;
+}
+.mail{
+    margin-left: -150px;
+}
+.add{
+    margin-top: 40px;
+    margin-left: -190px;
+}
+.box1-instagram{ 
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: whitesmoke;
+    margin-left:0px;
+    margin-top: 0px;
+    
+}
+.box2-facebook{
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: whitesmoke;
+    margin-left:0px;
+    margin-top: 0px;
+}
+.box3-whatsapp{
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: whitesmoke;
+    margin-left:0px;
+    margin-top: 0px;
+}
+.box4-contactus{
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+    background-color:whitesmoke;
+    
+    margin-left:0px;
+    margin-top: 0px;
+}
+.boxes{ width:250px;
+    height: 100px;
+    margin-top: -30px;
+    margin-left: -20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.instagram{
+  color: rgb(227, 41, 72);
+}
+.facebook{
+    color: blue;
+}
+.whatsapp{
+    color: rgb(76, 189, 76);
+}
+.contactus{
+    color: rgba(13, 0, 252, 0.67);
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="images/new_logo.2-1.png" width="150px" height="50px"></div>
+        <ul>
+            <li>
+              <a href="#">Holidays Ideas   <i class="fa-solid fa-angle-down" id="angeldown"></i></a>
+            
+              <ul class="dropdown">
+                 <li><a href="#">Hill Station</a></li>  
+                 <li><a href="#">Beaches</a></li>
+                 <li><a href="#">Camping</a></li>
+                 <li><a href="#">Cultural Spots</a></li>
+              </ul>  
+            </li>
+            <li>
+            <a href="#">Story<i class="fa-solid fa-angle-down" id="angeldown"></i></a>
+            
+            <ul class="dropdown">
+                <li><a href="#">Religious</a></li>  
+                <li><a href="#">Historical</a></li>
+                <li><a href="#">Adventurous</a></li>
+                <li><a href="#">Exploration</a></li>
+             </ul>  
+            </li>
+            <li>
+                <a href="#">Hotels <i class="fa-solid fa-angle-down" id="angeldown"></i> </a>
+             
+                <ul class="dropdown">
+                    <li><a href="#">Guest House</a></li>  
+                    <li><a href="#">5 Star Hotel</a></li>
+                    <li><a href="#">Hotel Taj</a></li>
+                    <li><a href="#">Hotel Natraj</a></li>
+                 </ul>  
+                </li>
+                <li>
+                    <a href="#">Tourist Spot<i class="fa-solid fa-angle-down" id="angeldown"></i></a>
+                    
+                    <ul class="dropdown">
+                        <li><a href="#">Shimla</a></li>  
+                        <li><a href="#">Calangute Place</a></li>
+                        <li><a href="#">Ram Mandir</a></li>
+                        <li><a href="#">Taj Mahal</a></li>
+                     </ul>  
+                    </li>
+                    <li>
+                        <a href="#">Tour Guide <i class="fa-solid fa-angle-down" id="angeldown"></i></a>
+                       
+                        <ul class="dropdown">
+                            <li><a href="#">Hadlee Renjith</a></li>  
+                            <li><a href="#">Stanzin Gurmeet</a></li>
+                            <li><a href="#">Kunal Sanklecha</a></li>
+                            <li><a href="#">Maria Victor</a></li>
+                         </ul>
+                        </li>
+        </ul>
+        <button class="button2"><a class="virtual" href=" https://local-market-travel-ginie.netlify.app/" style="color:black" target="_blank">Local Market</a> </button>
+        <button class="button1"><a class="virtual" href="https://virtual-tour980.netlify.app/" style="color:black" target="_blank">Virtual Tour</a> </button>
+        <li class="lastline"><a href="https://booking-travel-page.netlify.app/" style="color: black;" target="_blank"></i>Book Trip<i class="fa-solid fa-square-check"></i></a></li>
+        <li class="lastline2"><a href="https://booking-travel-page.netlify.app/" target="_blank" style="color: black;">Sign In</a></li>
+    </header>
+    <div class="searchbox"><input type="search" id="searchbar" placeholder="Search"><i class="fa-solid fa-magnifying-glass" id="search"></i></div>
+    <div class="imageslider"></div>
+    <div class="container">
+        <h1><p>Let Us Plan You A </p><b>Perfect</b> <span class="auto-type"></span></h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        
+            var typed= new Typed(".auto-type",{
+            strings:["India Tour","भारत भ्रमण"],
+            typeSpeed:120,
+            backSpeed:120,
+        
+            loop:true
+            
+        })
+    </script>
+    <div class="paragraph">"Let Us Plan A Best India Tour With Us"</div>
+<div class="boxforlater"><video controls src="images/w-1.mp4" height="200px" width="900px"></video></div>
+<div class="slide1">Explore Top Destination By State</div>
+<div class="Fullbox">
+<div class="slidebox">
+
+<div class="box1"> <div class="imageslider1"></div><div class="name1"><a href="https://bihar-travelginnie.netlify.app/"  target="_blank">Bihar</a><br></div><div class="Subname"> 80+ Destination</div></div>
+<div class="box2"><div class="imageslider2"></div><div class="name2"><a href="https://uttar-pardesh-travel-ginnie.netlify.app/"  target="_blank">U.P</a><br></div><div class="Subname2"> 50+ Destination</div></div>
+<div class="box3"><div class="imageslider3"></div><div class="name3"><a href="https://jammu-kashmir-travelginie.netlify.app/" target="_blank">Jammu-kashmir</a><br></div><div class="Subname3"> 40+ Destination</div></div>
+
+</div>
+<div class="slidebox1">
+    <div class="box4"> <div class="imageslider4"></div><div class="name4"><a href="https://kerala-tavel-ginnie.netlify.app/"  target="_blank">Kerala</a><br></div><div class="Subname4"> 20+ Destination</div></div>
+<div class="box5"><div class="imageslider5"></div><div class="name5"><a href="https://mumbai-travelginnie.netlify.app/"  target="_blank">Mumbai</a><br></div><div class="Subname5"> 100+ Destination</div></div>
+<div class="box6"><div class="imageslider6"></div><div class="name6"><a href="https://rajasthan-travelginie.netlify.app/" target="_blank">Rajsthan</a><br></div><div class="Subname6"> 30+ Destination</div></div>
+</div>
+ 
+<div class="line">Trending Destination</div>
+<div class="fulldown">
+<div class="downline"><div class="imagesliderbox1"></div>
+    <div class="subname1"><a href="https://char-dham-tavelginnie.netlify.app/" target="_blank">Char Dham</a></div>
+</div>
+<div class="downline"><div class="imagesliderbox2"></div>
+<div class="subname2"><a href="https://sikkimtourism.gov.in/Public/index" target="_blank">Sikkim</a></div>
+</div>
+<div class="downline"><div class="imagesliderbox3"></div>
+<div class="subname3"><a href="https://en.wikipedia.org/wiki/Market_(economics)" target="_blank">Local Market</a></div>
+</div>
+</div> 
+        
+<div>
+    <div class="footer1">
+        <div class="wh">
+            <head>Why Choose Us ?</head>
+        </div>
+            <div class="Container">
+                <div class="card">
+                    <div class="card-content">
+                        <h2>Experienced Tour Guide</h2>
+                        <p>We have a group of experienced tour guides that will help you for fully exploring the spot.
+                            The tour guide will help you for a safe and peaceful journey. Their knowledge is an invaluable asset for every traveller.</p>
+                        <a href=""></a>
+                    </div>
+                </div>
+            <div class="card">
+            <div class="card-content">
+                <h2>Value For Money</h2>
+                <p>With Travel Genie,your vacation is not just about sightseeing we help you to create lifetime memories. We help you to weave unforgettable experience into your journey ensuring every moment worthy. Trust us for enjoying valuable time with us in less money</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h2>One Stop Solution</h2>
+                <p>We provides solution for each and every problem the traveller can have whether it is about booking tickets, planning trip, booking hotel, nearby market for buying something. The one and only solution for all the troubling problems is us. Travel Genie will help  with every problem the traveller have.</p>
+                <a href=""></a>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-column about">
+                <h4>About Us</h4>
+                <p>Give You A Perfect Tour To India</p>
+            </div>
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li class="h"><a href="#">Home</a></li>
+                    <li class="s"><a href="#">Services</a></li>
+                    <li class="p"><a href="#">Portfolio</a></li>
+                    <li class="c"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li class="no-"><a href="#">+123 456 7890</a></li>
+                    <li class="mail"><a href="#">info@example.com</a></li>
+                    <li class="add"><a href="#">123 Street, City</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <div class="boxes"> 
+                    <div class="box1-instagram">
+                    <a class="instagram" href="https://www.instagram.com/mumbaitourism/"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                     </div>
+                    <div class="box2-facebook">
+                    <a class="facebook"href="https://www.facebook.com/touristofficemumbai/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                    <div class="box3-whatsapp">
+                    <a class="whatsapp"href="https://justgrouplinks.com/mumbai-whatsapp-group-link/#Latest_Mumbai_Group_Links"target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+                    <div class="box4-contactus"><a class="contactus" href="https://www.justdial.com/Mumbai/24-Hours-Travel-Agents/nct-10890643"target="_blank"><i class="fa-solid fa-phone"></i></a></div>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Travel Ginie. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>   
